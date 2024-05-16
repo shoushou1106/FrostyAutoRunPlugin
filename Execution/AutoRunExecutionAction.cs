@@ -58,7 +58,7 @@ namespace AutoRunPlugin.Execution
             }
             catch (Exception e)
             {
-                FrostyExceptionBox.Show(e, "Auto Run Plugin");
+                FrostyExceptionBox.Show(e, "Auto Run Plugin (PackDir)");
             }
             //token.ThrowIfCancellationRequested();
 
@@ -143,7 +143,7 @@ namespace AutoRunPlugin.Execution
             }
             catch (Exception e)
             {
-                FrostyExceptionBox.Show(e, "Auto Run Plugin");
+                FrostyExceptionBox.Show(e, "Auto Run Plugin (PackDir)");
             }
             //token.ThrowIfCancellationRequested();
 

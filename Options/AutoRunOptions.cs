@@ -157,7 +157,7 @@ namespace AutoRunPlugin.Options
             }
             catch (Exception e)
             {
-                FrostyExceptionBox.Show(e, "Auto Run Plugin");
+                FrostyExceptionBox.Show(e, "Auto Run Plugin (PackDir)");
             }
         }
     }
