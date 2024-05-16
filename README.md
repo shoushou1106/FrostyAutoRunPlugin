@@ -11,7 +11,7 @@ Download from [GitHub Release](https://github.com/shoushou1106/FrostyAutoRunPlug
 - `Enable Auto Run` will not run anything, it only enables other options
 - `Enable Pre Launch` will run files in `PreLaunch` folder, subfolders will be ignored
 - `Enable Post Launch` will run files in `PostLaunch` folder, subfolders will be ignored
-- Click on option to see the specific details, such as the folder to search for.
+- Click on option to see the details, such as the folder to search for.
 - If you need to run a program as administrator, you can try use shortcut (.lnk). You can even use Python if you need
 - Files are sorted by name, as you see in File Explorer. If you have requirements on the order, you can add a prefix to the file name, such as `1_` `2_` `A_` `B_`
 - If you encounter an exception, don't worry. If your Frosty is not closed after clicking Ok, it means it is not important. But if your Frosty is closed, please be sure to submit an issue!
