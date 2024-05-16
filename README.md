@@ -15,6 +15,7 @@ Download from [GitHub Release](https://github.com/shoushou1106/FrostyAutoRunPlug
 - If you need to run a program as administrator, you can try use shortcut (.lnk). You can even use Python if you need
 - Files are sorted by name, as you see in File Explorer. If you have requirements on the order, you can add a prefix to the file name, such as `1_` `2_` `A_` `B_`
 - If you encounter an exception, don't worry. If your Frosty is not closed after clicking Ok, it means it is not important. But if your Frosty is closed, please be sure to submit an issue!
+- This plugin uses `Process.Start()`, similar to double-clicking in File Explorer.
 
 ## Others
 - `Pack Directory` option is experimental. May cause unknown errors. If you encounter it, welcome to submit issues
