@@ -8,7 +8,7 @@ Download from [GitHub Release](https://github.com/shoushou1106/FrostyAutoRunPlug
 
 ## How to use
 - Open `Tools -> Options -> Auto Run Options` to config this plugin.
-- `Enable Auto Run` will not run anythig, it only enables other options
+- `Enable Auto Run` will not run anything, it only enables other options
 - `Enable Pre Launch` will run files in `PreLaunch` folder, subfolders will be ignored
 - `Enable Post Launch` will run files in `PostLaunch` folder, subfolders will be ignored
 - Click on option to see the specific details, such as the folder to search for.
