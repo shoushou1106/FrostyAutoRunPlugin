@@ -22,7 +22,7 @@ namespace AutoRunPlugin.Execution
             // Only run when AutoRun is enabled
             if (Config.Get("AutoRun_Enabled", false, ConfigScope.Global) is false)
                 return;
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             // Calculate total amount
             logger.Log("Calculating total amount");
@@ -35,7 +35,7 @@ namespace AutoRunPlugin.Execution
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\AutoRun\\PreLaunch");
                 Files.AddRange(Directory.GetFiles(Directory.GetCurrentDirectory() + "\\AutoRun\\PreLaunch\\"));
             }
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             // GameDir
             logger.Log("Looking for files in Game directory");
@@ -44,7 +44,7 @@ namespace AutoRunPlugin.Execution
                 Directory.CreateDirectory(App.FileSystem.BasePath + "AutoRun\\PreLaunch\\");
                 Files.AddRange(Directory.GetFiles(App.FileSystem.BasePath + "AutoRun\\PreLaunch\\"));
             }
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             // PackDir (ModData)
             logger.Log("Looking for files in Pack directory");
@@ -60,7 +60,7 @@ namespace AutoRunPlugin.Execution
             {
                 FrostyExceptionBox.Show(e, "Auto Run Plugin");
             }
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             App.Logger.Log("[PreLaunch] " + Files.Count + " files found");
 
@@ -72,7 +72,7 @@ namespace AutoRunPlugin.Execution
                 foreach (var path in Files)
                 {
                     App.Logger.Log("[PreLaunch] [Debug] " + path);
-                    token.ThrowIfCancellationRequested();
+                    //token.ThrowIfCancellationRequested();
                 }
             }
 
@@ -86,15 +86,15 @@ namespace AutoRunPlugin.Execution
                 {
                     logger.Log($"[{++i}/{Files.Count}] {Path.GetFileName(path)}");
                     ReportProgress(logger, i, Files.Count);
-                    token.ThrowIfCancellationRequested();
+                    //token.ThrowIfCancellationRequested();
                     Process.Start(path);
-                    token.ThrowIfCancellationRequested();
+                    //token.ThrowIfCancellationRequested();
                 }
                 catch (Exception e)
                 {
                     FrostyExceptionBox.Show(e, "Auto Run Plugin");
                 }
-                token.ThrowIfCancellationRequested();
+                //token.ThrowIfCancellationRequested();
             }
 
             logger.Log("Pre Launch Complete");
@@ -107,7 +107,7 @@ namespace AutoRunPlugin.Execution
             // Only run when AutoRun is enabled
             if (Config.Get("AutoRun_Enabled", false, ConfigScope.Global) is false)
                 return;
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             // Calculate total amount
             logger.Log("Calculating total amount");
@@ -120,7 +120,7 @@ namespace AutoRunPlugin.Execution
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\AutoRun\\PostLaunch\\");
                 Files.AddRange(Directory.GetFiles(Directory.GetCurrentDirectory() + "\\AutoRun\\PostLaunch\\"));
             }
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             // GameDir
             logger.Log("Looking for files in Game directory");
@@ -129,7 +129,7 @@ namespace AutoRunPlugin.Execution
                 Directory.CreateDirectory(App.FileSystem.BasePath + "AutoRun\\PostLaunch\\");
                 Files.AddRange(Directory.GetFiles(App.FileSystem.BasePath + "AutoRun\\PostLaunch\\"));
             }
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             // PackDir (ModData)
             logger.Log("Looking for files in Pack directory");
@@ -145,7 +145,7 @@ namespace AutoRunPlugin.Execution
             {
                 FrostyExceptionBox.Show(e, "Auto Run Plugin");
             }
-            token.ThrowIfCancellationRequested();
+            //token.ThrowIfCancellationRequested();
 
             App.Logger.Log("[PostLaunch] " + Files.Count + " files found");
 
@@ -154,11 +154,11 @@ namespace AutoRunPlugin.Execution
             {
                 logger.Log("[Debug] Printing all file paths");
                 App.Logger.Log("[PostLaunch] [Debug] All file paths:");
-                token.ThrowIfCancellationRequested();
+                //token.ThrowIfCancellationRequested();
                 foreach (var path in Files)
                 {
                     App.Logger.Log("[PostLaunch] [Debug] " + path);
-                    token.ThrowIfCancellationRequested();
+                    //token.ThrowIfCancellationRequested();
                 }
             }
 
@@ -172,15 +172,15 @@ namespace AutoRunPlugin.Execution
                 {
                     logger.Log($"[{++i}/{Files.Count}] {Path.GetFileName(path)}");
                     ReportProgress(logger, i, Files.Count);
-                    token.ThrowIfCancellationRequested();
+                    //token.ThrowIfCancellationRequested();
                     Process.Start(path);
-                    token.ThrowIfCancellationRequested();
+                    //token.ThrowIfCancellationRequested();
                 }
                 catch (Exception e)
                 {
                     FrostyExceptionBox.Show(e, "Auto Run Plugin");
                 }
-                token.ThrowIfCancellationRequested();
+                //token.ThrowIfCancellationRequested();
             }
 
             logger.Log("Post Launch Complete");
