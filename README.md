@@ -1,4 +1,4 @@
-# FrostyAutoRunPlugin
+# Frosty Auto Run Plugin
 A plugin for [Frosty Toolsuite v1](https://github.com/CadeEvs/FrostyToolsuite) to auto run files
 
 *There are a lot of things I can't do. Plz help me if you want. Any contributions are welcome.*
