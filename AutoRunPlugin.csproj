@@ -7,7 +7,6 @@
     <Product>AutoRunPlugin</Product>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <UseWPF>true</UseWPF>
     <OutputType>Library</OutputType>
     <Authors>shoushou1106</Authors>
   </PropertyGroup>
